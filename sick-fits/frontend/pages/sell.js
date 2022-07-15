@@ -1,7 +1,3 @@
-export default function sellPage() {
-  return (
-    <div>
-      <p>I'm for sell.</p>
-    </div>
-  );
+export default function SellPage() {
+  return <h3>I'm for sell page!</h3>;
 }
