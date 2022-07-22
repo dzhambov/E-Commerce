@@ -2,8 +2,8 @@ import Page from '../components/Page';
 
 export default function HomePage() {
   return (
-    <Page>
+    <HomePage>
       <h1>Hello there</h1>
-    </Page>
+    </HomePage>
   );
 }
