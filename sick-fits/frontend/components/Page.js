@@ -15,7 +15,7 @@ const GlobalStyles = createGlobalStyle`
     --red: #ff0000;
     --black: #393939;
     --grey: #3a3a3a;
-    --ligthGrey: #e1e1e1;
+    --lightGrey: #e1e1e1;
     --offWhite: #ededed;
     --maxWidth: 1000px;
     --bs: 0 12px 24px 0px rgba(0, 0, 0, .09)
@@ -48,23 +48,23 @@ const GlobalStyles = createGlobalStyle`
   }
 `;
 
-const InnerStyles = styled.div`
-  max-width: var(--maxWidth);
-  margin: 0 auto;
-  padding: 2rem;
-`;
+// const InnerStyles = styled.div`
+//   max-width: var(--maxWidth);
+//   margin: 0 auto;
+//   padding: 2rem;
+// `;
 
 export default function Page({ children }) {
   return (
     <div>
       <GlobalStyles />
       <Header />
-      <InnerStyles>{children}</InnerStyles>
-      <h2>I'm the page component!</h2>
+      {children}
+      {/* <InnerStyles /> */}
     </div>
   );
 }
 
-Page.PropTypes = {
+Page.propTypes = {
   children: PropTypes.any,
 };
